@@ -25,7 +25,7 @@ import lombok.Setter;
 public class Produto{
     @Id
     @Column(name = "produto_id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long produtoID = 0;
     @Column(name = "produto_name")
     private String produtoName = null;

@@ -28,7 +28,7 @@ import lombok.Setter;
 public class Match{
     @Id
     @Column(name = "match_id")
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private long matchID;
     
     @OneToOne (cascade=CascadeType.ALL)
