@@ -30,7 +30,7 @@ import lombok.Setter;
 public class Cliente{
     @Id
     @Column(name = "cliente_id")
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private long clienteID;
     
     @Column(name = "client_name")
